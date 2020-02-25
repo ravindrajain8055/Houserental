@@ -1,0 +1,72 @@
+
+.item ul{
+    display: none;
+}
+#menu:checked ~ .multi-level, .item input:checked ~ ul {
+    display: block;
+}
+
+/*Arrow*/
+
+.arrow {
+    width: 12px;
+    height: 12px;
+    float: right;
+    z-index: 0;
+    
+}
+.item input + .arrow {
+    transform: rotate(270deg);
+    transition: 0.5s;
+}
+.item input:checked + .arrow {
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+
+/*Styles*/
+
+label:hover {
+    cursor: pointer;
+}
+label {
+    width: 100%;
+    display: block;
+    z-index: 3;
+    position: relative;
+}
+.navi {
+    width: 100%;    
+}
+
+#nav-icon {
+    font-size: 28px;
+   
+    padding-left: 1em;
+}
+
+.navi ul, .navi li, label {
+    margin: 0; 
+    text-decoration: none;
+    padding:6px;
+    font-weight: 100;
+    width: 100%;
+}
+/* .item ul {
+    padding: 0 0.25em;
+} */
+.navi li a {
+    line-height: 5px;
+    font-size:20px;
+    margin: 0;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
